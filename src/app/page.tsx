@@ -323,7 +323,35 @@ export default function Home() {
         </div>
       </section>
 
-      <footer></footer>
+      <footer className="bg-gradient-to-r from-[#222222] to-[#333333] text-white py-12 relative overflow-hidden">
+        <div className="absolute inset-0 z-0 cyber-grid opacity-20"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex items-center space-x-4">
+              <p className="text-lg font-semibold">Tomoaki Aizawa</p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6">
+              <a href="https://github.com/aizack0625"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2">
+                <i className="devicon-github-original"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="mailto:thejune625@gmail.com"
+                className="hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2">
+                <i className="fas fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </div>
+
+            <div className="text-sm text-gray-400">
+              © 2024 Tomoaki Aizawa. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     </main>
   );
 }
